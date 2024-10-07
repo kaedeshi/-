@@ -416,6 +416,7 @@ media
 
   main .contact .contact-p p span{
     font-size: 1rem;
+    white-space: nowrap;
   }
 }
 
