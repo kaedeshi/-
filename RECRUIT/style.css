@@ -1364,6 +1364,12 @@ media
 }
 
 @media screen and (max-width:550px) {
+  main .recruit-about .recruit-about-title {
+    position: relative;
+    width: min(100% - 40px, 1040px);
+    margin-inline: auto;
+  }
+
   main .recruit-about .recruit-about-title h2 {
     font-size: 1.75rem;
   }
