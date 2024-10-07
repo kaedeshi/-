@@ -1,0 +1,455 @@
+@charset "utf-8";
+
+/*=======================================================================
+common
+=======================================================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/*=======================================================================
+header
+=======================================================================*/
+header {
+  position: relative;
+  width: 100%;
+  height: 80px;
+}
+
+header .header-div {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 0 24px;
+  background: #fb5545;
+  z-index: 5;
+}
+
+header .header-div h1 {
+  font-family: Noto Serif JP, sans-serif;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+header .header-div h1 img {
+  vertical-align: middle;
+}
+
+header .header-div nav ul {
+  display: flex;
+  gap: 40px;
+  color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-size: 1.25rem;
+}
+
+header .header-div nav ul li:hover {
+  opacity: .7;
+  scale: 1.1;
+}
+
+header .header-div nav ul li:active {
+  opacity: .4;
+}
+
+header .header-div #hamburger {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  display: none;
+}
+
+header .header-div #hamburger:hover {
+  opacity: .7;
+}
+
+header .header-div #hamburger #border1 {
+  position: absolute;
+  width: 48px;
+  height: 3px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  border-radius: 1.5px;
+  transition: all .3s;
+}
+
+header .header-div #hamburger #border1.show {
+  transform: rotate(45deg) translate(-4px, 30px);
+}
+
+header .header-div #hamburger #border2 {
+  position: absolute;
+  width: 48px;
+  height: 3px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  border-radius: 1.5px;
+  transition: all .3s;
+}
+
+header .header-div #hamburger #border2.show {
+  opacity: 0;
+}
+
+header .header-div #hamburger #border3 {
+  position: absolute;
+  width: 48px;
+  height: 3px;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  border-radius: 1.5px;
+  transition: all .3s;
+}
+
+header .header-div #hamburger #border3.show {
+  transform: rotate(-45deg) translate(-10px, -26px);
+}
+
+header #menu {
+  position: fixed;
+  transform: translateY(-350px);
+  left: 0;
+  width: 100%;
+  background: #aaaaaa;
+  opacity: 0;
+  transition: transform .3s, opacity .3s;
+  z-index: 3;
+}
+
+header #menu.show {
+  transform: translateY(80px);
+  opacity: 1;
+  pointer-events: all;
+}
+
+header #menu ul li {
+  width: 100%;
+  padding: 20px;
+  font-size: 1.25rem;
+  font-family: Roboto, sans-serif;
+  cursor: pointer;
+}
+
+header #menu ul li:hover {
+  opacity: .7;
+}
+
+header #menu ul li:active {
+  opacity: .4;
+}
+
+header #menu ul li:nth-child(5) {
+  color: blue;
+}
+
+header #mask {
+  position: fixed;
+  inset: 80px 0 0 0;
+  background: rgba(0, 0, 0, .7);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s;
+  z-index: 2;
+}
+
+header #mask.show {
+  opacity: 1;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+/*=======================================================================
+contact
+=======================================================================*/
+main .contact {
+  position: relative;
+  padding: 100px 0 200px;
+  width: min(100% - 80px, 1200px);
+  margin-inline: auto;
+}
+
+main .contact .contact-title h2 {
+  font-size: 2.5rem;
+  font-family: Noto Serif JP, sans-serif;
+  font-weight: 700;
+}
+
+main .contact .contact-title p {
+  font-size: .875rem;
+  font-family: Noto Serif JP, sans-serif;
+}
+
+main .contact .contact-p {
+  width: 100%;
+  margin-top: 25px;
+  font-size: 1.25rem;
+  font-family: Sawarabi Mincho, sans-serif;
+  text-align: center;
+}
+
+main .contact form .contact-form {
+  width: min(100%, 800px);
+  margin-inline: auto;
+  margin-top: 80px;
+}
+
+main .contact form .contact-form .type {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .contact form .contact-form .type+.type {
+  margin-top: 25px;
+}
+
+main .contact form .contact-form .type label {
+  position: relative;
+  width: 100%;
+  padding: 4px 0px;
+  font-size: 1.25rem;
+  font-family: Sawarabi Mincho, sans-serif;
+  white-space: nowrap;
+}
+
+main .contact form .contact-form .type .required::after {
+  content: '必須';
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: Sawarabi Mincho, sans-serif;
+  color: #fff;
+  background: red;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: .75rem;
+}
+
+main .contact form .contact-form .type input {
+  position: relative;
+  width: 100%;
+  padding: 8px;
+  font-family: Sawarabi Mincho, sans-serif;
+  font-size: 1.25rem;
+  border: 1px solid #ccc;
+}
+
+main .contact form .contact-form .type textarea {
+  position: relative;
+  width: 100%;
+  padding: 8px;
+  font-family: Sawarabi Mincho, sans-serif;
+  font-size: 1.25rem;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+main form .contact-btn {
+  position: relative;
+  display: block;
+  margin-inline: auto;
+  margin-top: 50px;
+  padding: 12px 0;
+  width: 320px;
+  font-size: 1.125rem;
+  font-family: Sawarabi Mincho, sans-serif;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  background: #111111;
+  text-align: center;
+  cursor: pointer;
+  transition: transform .3s, opacity .3s;
+}
+
+main form .contact-btn:hover {
+  opacity: .7;
+}
+
+main form .contact-btn:active {
+  opacity: .4;
+}
+
+main form .contact-rbtn {
+  position: relative;
+  display: block;
+  margin-inline: auto;
+  margin-top: 8px;
+  padding: 12px 0;
+  width: 320px;
+  font-size: 1.125rem;
+  font-family: Sawarabi Mincho, sans-serif;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  background: #bbb;
+  text-align: center;
+  cursor: pointer;
+  transition: transform .3s, opacity .3s;
+}
+
+main form #contact-rbtn:hover {
+  opacity: .7;
+}
+
+main form .contact-rbtn:active {
+  opacity: .4;
+}
+
+/*=======================================================================
+footer
+=======================================================================*/
+footer {
+  padding: 55px 0 0 0;
+  background: #fb5545;
+  color: #ffffff;
+}
+
+footer .footer-sp-menu {
+  display: none;
+  font-size: 1.125rem;
+  font-family: Roboto, sans-serif;
+}
+
+footer .footer-pc-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 720px;
+  margin-inline: auto;
+  font-size: 1.125rem;
+  font-family: Roboto, sans-serif;
+}
+
+footer .footer-pc-menu::before {
+  position: absolute;
+  content: '';
+  bottom: -55px;
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
+}
+
+footer ul li:hover {
+  opacity: .7;
+  scale: 1.1;
+}
+
+footer ul li:nth-child(4):hover {
+  opacity: 1;
+  scale: 1;
+}
+
+footer ul li:active {
+  opacity: .4;
+}
+
+footer .footer-small {
+  text-align: center;
+  font-size: 1rem;
+  font-family: Roboto, sans-serif;
+  margin-top: 80px;
+  padding-bottom: 24px;
+}
+
+/*=======================================================================
+media
+=======================================================================*/
+@media screen and (max-width:1000px) {
+  header .header-div nav {
+    display: none;
+  }
+
+  header .header-div #hamburger {
+    display: block;
+  }
+}
+
+@media screen and (max-width:600px) {
+  main .contact .contact-p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:820px) {
+  footer .footer-pc-menu {
+    display: none;
+  }
+
+  footer .footer-sp-menu {
+    display: block;
+    padding: 0 40px 0;
+    font-size: 1.125rem;
+  }
+
+  footer .footer-sp-menu li {
+    font-size: 1.125rem;
+    margin-top: 12px;
+  }
+
+  footer .footer-sp-menu li:hover {
+    opacity: .7;
+    scale: 1;
+  }
+
+  footer .footer-sp-menu li:nth-child(4),
+  footer .footer-sp-menu li:nth-child(5), 
+  footer .footer-sp-menu li:nth-child(6) {
+    padding-left: 20px;
+  }
+  
+  footer .footer-sp-menu li:nth-child(10) {
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  footer .footer-sp-menu li:nth-child(4):hover {
+    opacity: .7;
+    scale: 1;
+  }
+
+  footer .footer-sp-menu li:nth-child(10):hover {
+    opacity: 1;
+    scale: 1;
+  }
+  
+  footer .footer-sp-menu li:active {
+    opacity: .4;
+  }
+}
