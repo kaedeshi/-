@@ -520,9 +520,19 @@ main .contact .contact-content .contact-btn:active {
 
 main .contact .contact-content .contact-p {
   margin-top: 40px;
+}
+
+main .contact .contact-content .contact-p p {
   font-size: 1.25rem;
   font-family: Sawarabi Mincho, sans-serif;
   text-align: center;
+}
+
+main .contact .contact-content .contact-p p span {
+  font-size: 1.25rem;
+  font-family: Sawarabi Mincho, sans-serif;
+  text-align: center;
+  white-space: nowrap;
 }
 
 /*=======================================================================

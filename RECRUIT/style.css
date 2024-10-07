@@ -637,7 +637,7 @@ main .recruit-ecore .recruit-ecore-content .recruit-ecore-p p+p {
 
 main .recruit-ecore .recruit-ecore-content .recruit-ecore-btn {
   margin-top: 25px;
-  width: 300px;
+  width: min(100% - 40px, 300px);
   margin-inline: auto;
   font-size: 1.25rem;
   font-family: Noto Serif JP, sans-serif;

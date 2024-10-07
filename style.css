@@ -483,6 +483,12 @@ main .corporate .corporate-content .corporate-ecore h3 {
   font-family: Sawarabi Mincho, sans-serif;
 }
 
+main .corporate .corporate-content .corporate-ecore h3 span {
+  font-size: 2.25rem;
+  font-family: Sawarabi Mincho, sans-serif;
+  white-space: nowrap;
+}
+
 main .corporate .corporate-content .corporate-ecore .corporate-ecore-img {
   width: 70%;
   margin-top: 40px;
@@ -683,6 +689,11 @@ main .corporate-all .corporate4 .corporate-text .corporate-img {
   opacity: 0;
   transform: translateX(-100px);
   transition: transform .6s, opacity .6s;
+  text-align: center;
+}
+
+main .corporate-all .corporate4 .corporate-text .corporate-img img {
+  width: 100%;
 }
 
 main .corporate-all .corporate4 .corporate-text .corporate-p {
@@ -820,9 +831,19 @@ main .contact .contact-content .contact-btn:active {
 
 main .contact .contact-content .contact-p {
   margin-top: 40px;
+}
+
+main .contact .contact-content .contact-p p {
   font-size: 1.25rem;
   font-family: Sawarabi Mincho, sans-serif;
   text-align: center;
+}
+
+main .contact .contact-content .contact-p p span {
+  font-size: 1.25rem;
+  font-family: Sawarabi Mincho, sans-serif;
+  text-align: center;
+  white-space: nowrap;
 }
 
 /*=======================================================================
@@ -1010,6 +1031,10 @@ footer
   }
 
   main .corporate .corporate-content .corporate-ecore h3 {
+    font-size: 1.75rem;
+  }
+
+  main .corporate .corporate-content .corporate-ecore h3 span {
     font-size: 1.75rem;
   }
 
