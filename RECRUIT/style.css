@@ -1366,8 +1366,9 @@ media
 @media screen and (max-width:550px) {
   main .recruit-about .recruit-about-title {
     position: relative;
-    width: min(100% - 40px, 1040px);
+    width: min(100%, 1040px);
     margin-inline: auto;
+    white-space: nowrap;
   }
 
   main .recruit-about .recruit-about-title h2 {

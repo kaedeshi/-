@@ -213,18 +213,20 @@ main .contact .contact-title p {
   font-family: Noto Serif JP, sans-serif;
 }
 
-main .contact .contact-title p span {
-  white-space: nowrap;
-  font-size: .875rem;
-  font-family: Noto Serif JP, sans-serif;
-}
-
 main .contact .contact-p {
   width: 100%;
   margin-top: 25px;
+  text-align: center;
+}
+
+main .contact .contact-p p {
   font-size: 1.25rem;
   font-family: Sawarabi Mincho, sans-serif;
-  text-align: center;
+}
+main .contact .contact-pp span {
+  font-size: 1.25rem;
+  font-family: Sawarabi Mincho, sans-serif;
+  white-space: nowrap;
 }
 
 main .contact form .contact-form {
@@ -408,11 +410,11 @@ media
 }
 
 @media screen and (max-width:600px) {
-  main .contact .contact-p {
+  main .contact .contact-p p {
     font-size: 1rem;
   }
 
-  main .contact .contact-p span{
+  main .contact .contact-p p span{
     font-size: 1rem;
   }
 }
