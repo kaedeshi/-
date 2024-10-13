@@ -501,6 +501,10 @@ main .h-c .company dl dt {
   padding: 32px 0;
 }
 
+main .h-c .company dl dt span {
+white-space: nowrap;
+}
+
 main .h-c .company dl dd {
   width: 70%;
   font-family: Noto Serif JP, sans-serif;
