@@ -305,8 +305,26 @@ main .recruit-fv .recruit-fv-p {
   display: flex;
   width: 600px;
   justify-content: space-between;
+  text-align: center;
   align-items: center;
   font-size: 3rem;
+  font-family: Noto Serif JP, sans-serif;
+  font-weight: 100;
+}
+
+main .recruit-fv .recruit-fv-p p:nth-child(2) {
+  position: relative;
+}
+
+main .recruit-fv .recruit-fv-p p:nth-child(2)::before {
+  position: absolute;
+  content: '『エコレ総代理店』';
+  color: black;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 1rem;
   font-family: Noto Serif JP, sans-serif;
   font-weight: 100;
 }
@@ -422,6 +440,7 @@ main .recruit-about {
   background: url(point-background.png);
   background-repeat: no-repeat;
   background-position: calc(50% + 40px) 150px;
+  overflow: hidden;
 }
 
 main .recruit-about .recruit-about-title {

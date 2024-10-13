@@ -202,6 +202,7 @@ main .corporatesupport {
 main .corporatesupport {
   width: min(100% - 80px, 1200px);
   margin-inline: auto;
+  overflow: hidden;
 }
 
 main .corporatesupport .corporatesupport-title h2 {
@@ -222,7 +223,7 @@ main .corporatesupport .corporatesupport-p {
 main .corporatesupport .corporatesupport-p p {
   font-size: 1.875rem;
   line-height: 40px;
-  font-family: Sawarabi Mincho, sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 /*=======================================================================
@@ -230,6 +231,7 @@ corporatesupport-ecore
 =======================================================================*/
 main .corporatesupport-ecore {
   position: relative;
+  overflow: hidden;
 }
 
 main .corporatesupport-ecore .corporatesupport-ecore-img-sp {
@@ -262,6 +264,7 @@ main .corporatesupport-ecore .corporatesupport-ecore-btn1 p,
 main .corporatesupport-ecore .corporatesupport-ecore-btn2 p {
   color: #ffffff;
   font-size: 1.75rem;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 main .corporatesupport-ecore .corporatesupport-ecore-btn1 div,
@@ -298,10 +301,30 @@ main .corporatesupport-ecore .corporatesupport-ecore-btn2 div:active {
 /*=======================================================================
 work
 =======================================================================*/
+main .intro {
+  position: relative;
+}
+
+main .intro .intro-cimg {
+  position: fixed;
+  top: 50%;
+  left: 80%;
+  translate: -50% -50%;
+  transform: translateX(300px);
+  opacity: 0;
+  transition: all .4s;
+}
+
+
+main .intro .work {
+ overflow: hidden;
+}
+
 main .intro .work>p {
   text-align: center;
   padding-top: 50px;
-  font-family: Noto Serif JP, sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 600;
   font-size: 2rem;
 }
 
@@ -311,7 +334,7 @@ main .intro .work:nth-child(3) {
 }
 
 main .intro .work .work-text {
-  width: min(100% - 80px, 960px);
+  width: min(100% - 80px);
   margin-inline: auto;
   padding: 50px 0;
 }
@@ -336,9 +359,9 @@ main .intro .work .work-text .work-p {
 main .intro .work .work-text .work-p h3 {
   position: relative;
   margin-left: 40px;
-  font-family: Noto Serif JP, sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 1.875rem;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 30px;
 }
 
@@ -355,9 +378,9 @@ main .intro .work .work-text .work-p h3::before {
 
 main .intro .work .work-text .work-p>p {
   margin-top: 40px;
-  font-family: Noto Serif JP, sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 2.25rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 36px;
 }
 
@@ -367,11 +390,11 @@ main .intro .work .work-text .work-p .work-p3 {
   margin-top: 40px;
 }
 
-main .intro .work .work-text .work-p .work-p1 p,
-main .intro .work .work-text .work-p .work-p2 p,
-main .intro .work .work-text .work-p .work-p3 p {
-  font-family: Noto Serif JP, sans-serif;
-  font-size: 2rem;
+main .intro .work .work-text .work-p .work-p1>p,
+main .intro .work .work-text .work-p .work-p2>p,
+main .intro .work .work-text .work-p .work-p3>p {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 32px;
 }
@@ -380,10 +403,6 @@ main .intro .work .work-text .work-p .work-p1 ul,
 main .intro .work .work-text .work-p .work-p2 ul,
 main .intro .work .work-text .work-p .work-p3 ul {
   margin-top: 20px;
-  font-family: Noto Serif JP, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 300;
-  line-height: 40px;
 }
 
 main .intro .work .work-text .work-p .work-p1 ul li,
@@ -391,6 +410,15 @@ main .intro .work .work-text .work-p .work-p2 ul li,
 main .intro .work .work-text .work-p .work-p3 ul li {
   position: relative;
   margin-left: 24px;
+}
+
+main .intro .work .work-text .work-p .work-p1 ul li p,
+main .intro .work .work-text .work-p .work-p2 ul li p,
+main .intro .work .work-text .work-p .work-p3 ul li p {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 40px;
 }
 
 main .intro .work .work-text .work-p .work-p1 ul li::before,
@@ -409,6 +437,12 @@ main .intro .work .work-text .work-p .small {
   margin-top: 10px;
   font-size: .875rem;
   line-height: 14px;
+  font-weight: 200;
+}
+main .intro .work .work-text .work-p .small span {
+  font-size: .875rem;
+  line-height: 14px;
+  font-weight: 200;
 }
 
 
@@ -469,6 +503,7 @@ main .contact .contact-title p {
 main .contact .contact-content {
   width: 100%;
   margin-top: 50px;
+  overflow: hidden;
 }
 
 main .contact .contact-content .contact-list ul {
@@ -488,7 +523,7 @@ main .contact .contact-content .contact-list ul li::before {
 main .contact .contact-content .contact-list ul li {
   position: relative;
   font-size: 1.5rem;
-  font-family: Sawarabi Mincho, sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   margin-top: 8px;
 }
 
@@ -524,13 +559,13 @@ main .contact .contact-content .contact-p {
 
 main .contact .contact-content .contact-p p {
   font-size: 1.25rem;
-  font-family: Sawarabi Mincho, sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   text-align: center;
 }
 
 main .contact .contact-content .contact-p p span {
   font-size: 1.25rem;
-  font-family: Sawarabi Mincho, sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   text-align: center;
   white-space: nowrap;
 }
@@ -938,8 +973,13 @@ media
   main .intro .work .work-text .work-p .work-p1 ul,
   main .intro .work .work-text .work-p .work-p2 ul,
   main .intro .work .work-text .work-p .work-p3 ul {
-    font-size: 1rem;
     line-height: 32px;
+  }
+
+  main .intro .work .work-text .work-p .work-p1 ul li p,
+  main .intro .work .work-text .work-p .work-p2 ul li p,
+  main .intro .work .work-text .work-p .work-p3 ul li p {
+    font-size: 1.125rem;
   }
   
   main .intro .work .work-text .work-p .small span {
@@ -1013,7 +1053,7 @@ media
   
   main .corporatesupport-ecore .corporatesupport-ecore-btn1 p,
   main .corporatesupport-ecore .corporatesupport-ecore-btn2 p {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
   
   main .corporatesupport-ecore .corporatesupport-ecore-btn1 div,

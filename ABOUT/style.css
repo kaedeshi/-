@@ -203,6 +203,7 @@ main .about {
 main .about .about-content {
   width: min(100% - 80px, 1200px);
   margin-inline: auto;
+  overflow: hidden;
 }
 
 main .about .about-content .about-title h2 {
@@ -338,12 +339,12 @@ message
 =======================================================================*/
 main .message {
   padding: 50px 0;
-  overflow: hidden;
 }
 
 main .message .message-content {
   width: min(100% - 80px, 1200px);
   margin-inline: auto;
+  overflow: hidden;
 }
 
 main .message .message-content .message-title h2 {
@@ -420,6 +421,7 @@ main .h-c {
 main .h-c .history {
   width: min(100% - 80px, 1200px);
   margin-inline: auto;
+  overflow: hidden;
 }
 
 main .h-c .history .history-title h2 {
@@ -470,6 +472,7 @@ company
 main .h-c .company {
   width: min(100% - 80px, 1200px);
   margin-inline: auto;
+  overflow: hidden;
   margin-top: 200px;
 }
 
@@ -571,6 +574,7 @@ main .contact .contact-title p {
 main .contact .contact-content {
   width: 100%;
   margin-top: 50px;
+  overflow: hidden;
 }
 
 main .contact .contact-content .contact-list ul {

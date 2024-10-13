@@ -332,6 +332,7 @@ about
 main .about {
   padding: 200px 0 200px;
   background: #f2f2f2;
+  overflow: hidden;
 }
 
 main .about .about-content {
@@ -458,6 +459,7 @@ main .corporate .corporate-cimg img.show {
 main .corporate .corporate-content {
   width: min(100% - 80px, 1200px);
   margin-inline: auto;
+  overflow: hidden;
 }
 
 main .corporate .corporate-content .corporate-title h2 {
@@ -668,6 +670,7 @@ corporate-all
 main .corporate-all {
   padding: 200px 0;
   background: #f2f2f2;
+  overflow: hidden;
 }
 
 main .corporate-all .corporate4 {
@@ -694,6 +697,7 @@ main .corporate-all .corporate4 .corporate-text .corporate-img {
 
 main .corporate-all .corporate4 .corporate-text .corporate-img img {
   width: 100%;
+  height: auto;
 }
 
 main .corporate-all .corporate4 .corporate-text .corporate-p {
@@ -780,6 +784,7 @@ main .contact .contact-title p {
 main .contact .contact-content {
   width: 100%;
   margin-top: 50px;
+  overflow: hidden;
 }
 
 main .contact .contact-content .contact-list ul {

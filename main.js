@@ -65,7 +65,6 @@
   const target26 = document.querySelector('main .ecore-merit .ecore-merit-content .ecore-merits .ecore-merit-merit:nth-child(3) .ecore-merit-merit-img');
   const target27 = document.querySelector('main .ecore-merit .ecore-merit-content .ecore-merits .ecore-merit-merit:nth-child(4) .ecore-merit-merit-img');
   const target28 = document.querySelector('main .ecore-merit .ecore-merit-content .ecore-merits .ecore-merit-merit:nth-child(5) .ecore-merit-merit-img');
-
   const target30 = document.querySelector('main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-p');
   const target31 = document.querySelector('main .ecore-feature .ecore-feature-content .ecore-feature1 .ecore-feature1-y');
   const target32 = document.querySelector('main .ecore-feature .ecore-feature-content .ecore-feature3 .ecore-feature3-p');
@@ -76,6 +75,10 @@
   const target37 = document.querySelector('main .ecore-flow .ecore-flow-content dl dt:nth-child(3) .ecore-flow-img');
   const target38 = document.querySelector('main .ecore-flow .ecore-flow-content dl dt:nth-child(5) .ecore-flow-img');
   const target39 = document.querySelector('main .ecore-flow .ecore-flow-content dl dt:nth-child(7) .ecore-flow-img');
+  const target40 = document.querySelector('main .intro .intro-cimg');
+  const target41 = document.querySelector('main .intro #work1');
+  const target42 = document.querySelector('main .contact');
+
 
   let windowWidth = window.innerWidth;
 
@@ -454,6 +457,58 @@
       target39.style.transform = 'translateY(0)';
     }
   });
+
+  window.addEventListener('scroll', () => {
+    let targetPosition = window.innerHeight * 1 / 8;
+    let targetItemPosition41 = target41.getBoundingClientRect().top;
+
+    if (targetItemPosition41 >= targetPosition) {
+      target40.style.opacity = '0';
+      target40.style.left = 'calc(80% + 300px)';
+      target40.style.transform = 'translateX(300)';
+    }
+  });
+
+  window.addEventListener('scroll', () => {
+    let targetPosition = window.innerHeight * 1 / 8;
+    let targetItemPosition41 = target41.getBoundingClientRect().top;
+
+    if (targetItemPosition41 < targetPosition) {
+      target40.style.opacity = '.1';
+      target40.style.left = '80%';
+      target40.style.transform = 'translateX(0)';
+    }
+  });
+
+  // window.addEventListener('scroll', () => {
+  //   let targetPosition = window.innerHeight * 4 / 5;
+  //   let targetItemPosition42 = target42.getBoundingClientRect().top;
+
+  //   if (targetItemPosition42 >= targetPosition) {
+  //     target40.style.opacity = '.1';
+  //     target40.style.left = '80%';
+  //     target40.style.transition = 'all .3s';
+  //   }
+  // });
+
+  window.addEventListener('scroll', () => {
+    let targetPosition = window.innerHeight * 4 / 5;
+    let targetItemPosition42 = target42.getBoundingClientRect().top;
+
+    if (targetItemPosition42 < targetPosition) {
+      target40.style.opacity = '0';
+      target40.style.left = '50%';
+      target40.style.transition = 'all .3s';
+    }
+  });
+  
+ 
+
+  
+  
+
+
+
 
 
   const questions = document.querySelectorAll('main .recruit-question .recruit-questions dl div dt');
