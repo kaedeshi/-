@@ -913,7 +913,9 @@ media
   }
 
   main .h-c .company dl dt span {
+    font-family: Noto Serif JP, sans-serif;
     font-size: 1rem;
+    font-weight: 700;
   }
 
   main .h-c .company dl dd {
@@ -922,6 +924,7 @@ media
 
   main .h-c .company dl dd span {
     font-size: 1rem;
+    font-family: Noto Serif JP, sans-serif;
   }
 
   main .h-c .company dl .company-pc {
