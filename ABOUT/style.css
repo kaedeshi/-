@@ -912,7 +912,15 @@ media
     font-size: 1rem;
   }
 
+  main .h-c .company dl dt span {
+    font-size: 1rem;
+  }
+
   main .h-c .company dl dd {
+    font-size: 1rem;
+  }
+
+  main .h-c .company dl dd span {
     font-size: 1rem;
   }
 
