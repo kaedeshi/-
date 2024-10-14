@@ -305,8 +305,7 @@ main .aboutus-img .aboutus-p4 {
 
 main .aboutus-img .aboutus-p2 p:nth-child(1),
 main .aboutus-img .aboutus-p3 p:nth-child(1),
-main .aboutus-img .aboutus-p4 p:nth-child(1)
- {
+main .aboutus-img .aboutus-p4 p:nth-child(1) {
   color: #ffffff;
   font-size: 5rem;
   font-family: Noto Serif JP, sans-serif;
@@ -316,8 +315,7 @@ main .aboutus-img .aboutus-p4 p:nth-child(1)
 
 main .aboutus-img .aboutus-p2 p:nth-child(1) span,
 main .aboutus-img .aboutus-p3 p:nth-child(1) span,
-main .aboutus-img .aboutus-p4 p:nth-child(1) span
- {
+main .aboutus-img .aboutus-p4 p:nth-child(1) span {
   color: #ffffff;
   font-size: 2.5rem;
   font-family: Noto Serif JP, sans-serif;
@@ -325,8 +323,7 @@ main .aboutus-img .aboutus-p4 p:nth-child(1) span
 
 main .aboutus-img .aboutus-p2 p:nth-child(2),
 main .aboutus-img .aboutus-p3 p:nth-child(2),
-main .aboutus-img .aboutus-p4 p:nth-child(2)
- {
+main .aboutus-img .aboutus-p4 p:nth-child(2) {
   color: #ffffff;
   font-size: 1.875rem;
   font-family: Noto Serif JP, sans-serif;
@@ -404,6 +401,7 @@ main .message .message-content .message-text .message-p .president-name {
   font-size: 1.25rem;
   text-align: end;
 }
+
 main .message .message-content .message-text .message-p .president-name span {
   font-size: 1.875rem;
   font-weight: 400;
@@ -502,7 +500,10 @@ main .h-c .company dl dt {
 }
 
 main .h-c .company dl dt span {
-white-space: nowrap;
+  white-space: nowrap;
+  font-family: Noto Serif JP, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 main .h-c .company dl dd {
@@ -518,6 +519,8 @@ main .h-c .company dl dd iframe {
 
 main .h-c .company dl dd span {
   white-space: nowrap;
+  font-family: Noto Serif JP, sans-serif;
+  font-size: 1.25rem;
 }
 
 main .h-c .company dl .company-sp {
@@ -550,15 +553,19 @@ main .contact .contact-cimg img.show {
   50% {
     scale: 0.8;
   }
+
   60% {
     scale: 1.05;
   }
+
   70% {
     scale: 1;
   }
+
   80% {
     scale: 1.05;
   }
+
   90% {
     scale: 1;
   }
@@ -587,12 +594,12 @@ main .contact .contact-content .contact-list ul {
 }
 
 main .contact .contact-content .contact-list ul li::before {
- position: absolute;
- content: '・';
- color: #111111;
- left: -25px;
- top: 50%;
- transform: translateY(-50%);
+  position: absolute;
+  content: '・';
+  color: #111111;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 main .contact .contact-content .contact-list ul li {
@@ -645,6 +652,7 @@ main .contact .contact-content .contact-p p span {
   text-align: center;
   white-space: nowrap;
 }
+
 /*=======================================================================
 footer
 =======================================================================*/
@@ -705,28 +713,28 @@ footer .footer-small {
 /*=======================================================================
 media
 =======================================================================*/
-@media screen and (max-width:1200px) {  
+@media screen and (max-width:1200px) {
   main .message .message-content .message-text {
     display: block;
     margin-top: 25px;
   }
-  
+
   main .message .message-content .message-text .message-img {
     width: 100%;
     margin-top: 25px;
   }
-  
+
   main .message .message-content .message-text .message-img img {
     width: min(85%, 400px);
   }
-  
+
   main .message .message-content .message-text .message-img .message-img-bg {
     top: calc(50% + 25px);
     left: calc(50% + 40px);
     width: min(85%, 400px);
     height: 280px;
   }
-  
+
   main .message .message-content .message-text .message-p {
     width: 100%;
     font-size: .875rem;
@@ -785,45 +793,42 @@ media
     background-size: cover;
     background-position: top center;
   } */
-  
+
   main .aboutus-img .aboutus-p1 {
     font-size: 2.25rem;
   }
-  
+
   main .aboutus-img .aboutus-p2 {
     top: calc(25%);
     left: calc(50% + 3px);
   }
-  
+
   main .aboutus-img .aboutus-p3 {
     top: 50%;
     left: calc(50% - 25px);
   }
-  
+
   main .aboutus-img .aboutus-p4 {
     top: calc(75%);
     left: 50%;
   }
-  
+
   main .aboutus-img .aboutus-p2 p:nth-child(1),
   main .aboutus-img .aboutus-p3 p:nth-child(1),
-  main .aboutus-img .aboutus-p4 p:nth-child(1)
-   {
+  main .aboutus-img .aboutus-p4 p:nth-child(1) {
     font-size: 4rem;
     line-height: 64px;
   }
-  
+
   main .aboutus-img .aboutus-p2 p:nth-child(1) span,
   main .aboutus-img .aboutus-p3 p:nth-child(1) span,
-  main .aboutus-img .aboutus-p4 p:nth-child(1) span
-   {
+  main .aboutus-img .aboutus-p4 p:nth-child(1) span {
     font-size: 1.875rem;
   }
-  
+
   main .aboutus-img .aboutus-p2 p:nth-child(2),
   main .aboutus-img .aboutus-p3 p:nth-child(2),
-  main .aboutus-img .aboutus-p4 p:nth-child(2)
-   {
+  main .aboutus-img .aboutus-p4 p:nth-child(2) {
     font-size: 1.5rem;
     line-height: 24px;
   }
@@ -832,15 +837,15 @@ media
     width: max(100% - 80px, 52%);
     margin-inline: auto;
   }
-  
+
   main .contact .contact-content .contact-list ul li {
     font-size: 1.25rem;
   }
-  
+
   main .contact .contact-content .contact-btn {
     margin-top: 25px;
   }
-  
+
   main .contact .contact-content .contact-p {
     margin-top: 25px;
     font-size: 1.125rem;
@@ -869,11 +874,11 @@ media
   }
 
   footer .footer-sp-menu li:nth-child(4),
-  footer .footer-sp-menu li:nth-child(5), 
+  footer .footer-sp-menu li:nth-child(5),
   footer .footer-sp-menu li:nth-child(6) {
     padding-left: 20px;
   }
-  
+
   footer .footer-sp-menu li:nth-child(10) {
     text-align: center;
     margin-top: 25px;
@@ -888,7 +893,7 @@ media
     opacity: 1;
     scale: 1;
   }
-  
+
   footer .footer-sp-menu li:active {
     opacity: .4;
   }
@@ -898,7 +903,7 @@ media
   main .h-c .history dl dt {
     font-size: 1rem;
   }
-  
+
   main .h-c .history dl dd {
     font-size: 1rem;
   }
@@ -906,7 +911,7 @@ media
   main .h-c .company dl dt {
     font-size: 1rem;
   }
-  
+
   main .h-c .company dl dd {
     font-size: 1rem;
   }

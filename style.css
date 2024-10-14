@@ -505,10 +505,20 @@ main .corporate .corporate-content .corporate-ecore .corporate-ecore-img img {
 }
 
 main .corporate .corporate-content .corporate-ecore .corporate-ecore-p {
+  margin-top: 40px;
+}
+
+main .corporate .corporate-content .corporate-ecore .corporate-ecore-p p {
   font-size: 1.25rem;
   font-family: Sawarabi Mincho, sans-serif;
   line-height: 1.75;
-  margin-top: 40px;
+}
+
+main .corporate .corporate-content .corporate-ecore .corporate-ecore-p p span {
+  font-size: 1.25rem;
+  font-family: Sawarabi Mincho, sans-serif;
+  line-height: 1.75;
+  white-space: nowrap;
 }
 
 main .corporate .corporate-content .corporate-ecore .corporate-ecore-p p+p {
@@ -700,10 +710,16 @@ main .corporate-all .corporate4 .corporate-text .corporate-img img {
   height: auto;
 }
 
-main .corporate-all .corporate4 .corporate-text .corporate-p {
+main .corporate-all .corporate4 .corporate-text .corporate-p p {
   font-size: 1.25rem;
   font-family: Sawarabi Mincho, sans-serif;
   line-height: 2;
+}
+
+main .corporate-all .corporate4 .corporate-text .corporate-p p span {
+  font-size: 1.25rem;
+  font-family: Sawarabi Mincho, sans-serif;
+  white-space: nowrap;
 }
 
 main .corporate-all .corporate4 .corporate-text .corporate-p .corporate-btn {
