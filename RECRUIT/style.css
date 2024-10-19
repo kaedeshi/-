@@ -643,6 +643,16 @@ main .recruit-ecore .recruit-ecore-content>div {
   width: calc((100% - 40px)/ 2);
 }
 
+main .recruit-ecore .recruit-ecore-content .recruit-ecore-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .recruit-ecore .recruit-ecore-content .recruit-ecore-img iframe {
+  width: 100%;
+}
+
 main .recruit-ecore .recruit-ecore-content .recruit-ecore-p p {
   font-size: 1.125rem;
   font-weight: 300;
