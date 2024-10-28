@@ -785,14 +785,14 @@ media
     display: block;
   }
 
-  /* main .aboutus-img {
+  main .aboutus-img {
     position: relative;
     width: 100%;
     height: 700px;
-    background: url(../about.jpg);
+    background: url(../about-sp.jpg);
     background-size: cover;
-    background-position: top center;
-  } */
+    background-position: center;
+  }
 
   main .aboutus-img .aboutus-p1 {
     font-size: 2.25rem;
