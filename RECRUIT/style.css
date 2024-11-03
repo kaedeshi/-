@@ -292,35 +292,32 @@ main .recruit-fv {
   position: relative;
   width: 100%;
   height: calc(100vh - 80px);
-  background: url(recruit-fv.jpg);
-  background-size: cover;
-  background-position: top center;
-}
+  background: #eeeeee;
+  /* background-size: cover;
+  background-position: center;
+  overflow: hidden; */
+ }
 
 main .recruit-fv .recruit-fv-p {
   position: absolute;
   top: 50%;
-  left: calc(50% - 30px);
-  translate: -50%;
+  left: 50%;
+  translate: -50% -50%;
   display: flex;
-  width: 600px;
-  justify-content: space-between;
+  gap: 100px;
   text-align: center;
   align-items: center;
-  font-size: 3rem;
-  font-family: Noto Serif JP, sans-serif;
-  font-weight: 100;
 }
 
-main .recruit-fv .recruit-fv-p p:nth-child(2) {
+main .recruit-fv .recruit-fv-p div:nth-child(2) {
   position: relative;
 }
 
-main .recruit-fv .recruit-fv-p p:nth-child(2)::before {
+main .recruit-fv .recruit-fv-p div:nth-child(2)::before {
   position: absolute;
   content: '『エコレ総代理店』';
   color: black;
-  top: -10px;
+  top: -25px;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
@@ -329,7 +326,7 @@ main .recruit-fv .recruit-fv-p p:nth-child(2)::before {
   font-weight: 100;
 }
 
-main .recruit-fv .recruit-fv-p p:nth-child(1) {
+main .recruit-fv .recruit-fv-p div:nth-child(1) {
   transform: translateY(-200px);
   opacity: 0;
   animation: recruit-fv-p1 1.5s forwards;
@@ -343,11 +340,11 @@ main .recruit-fv .recruit-fv-p p:nth-child(1) {
 
   100% {
     opacity: 1;
-    transform: none;
+    transform: translateY(0);
   }
 }
 
-main .recruit-fv .recruit-fv-p p:nth-child(2) {
+main .recruit-fv .recruit-fv-p div:nth-child(2) {
   transform: translateY(200px);
   opacity: 0;
   animation: recruit-fv-p2 1.5s forwards;
@@ -369,7 +366,7 @@ main .recruit-fv .recruit-fv-p::before {
   position: absolute;
   content: '';
   bottom: -20px;
-  left: calc(50% + 20px);
+  left: calc(50%);
   transform: translateX(-50%);
   width: 450px;
   height: 1px;
@@ -390,8 +387,9 @@ main .recruit-fv .recruit-fv-p::before {
 
 main .recruit-fv .recruit-fv-img1 {
   position: absolute;
-  top: calc(50% + 40px);
-  left: calc(50% - 10px);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
   width: 40px;
   height: 1px;
   background: #000000;
@@ -412,8 +410,9 @@ main .recruit-fv .recruit-fv-img1 {
 
 main .recruit-fv .recruit-fv-img2 {
   position: absolute;
-  top: calc(50% + 40px);
-  left: calc(50% - 10px);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
   width: 40px;
   height: 1px;
   background: #000000;
@@ -1449,32 +1448,20 @@ media
 
 @media screen and (max-width:700px) {
   main .recruit-fv .recruit-fv-p {
-    left: 50%;
-    text-align: center;
+    flex-direction: column;
     translate: -50% -50%;
-    display: block;
-    width: 100%;
-  }
-
-  main .recruit-fv .recruit-fv-p p:nth-child(2) {
-    margin-top: 100px;
   }
 
   main .recruit-fv .recruit-fv-p::before {
-    left: calc(50%);
-    width: 320px;
+    width: calc(100% / 2);
   }
-
+  
   main .recruit-fv .recruit-fv-img1 {
-    top: calc(50%);
-    left: calc(50%);
-    translate: -50% -50%;
+    top: calc(50% + 20px);
   }
-
+  
   main .recruit-fv .recruit-fv-img2 {
-    top: calc(50%);
-    left: calc(50%);
-    translate: -50% -50%;
+    top: calc(50% + 20px);
   }
 
   main .recruit-support>p {
