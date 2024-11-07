@@ -298,9 +298,42 @@ main .recruit-fv {
   overflow: hidden; */
  }
 
+main .recruit-fv .recruit-fv-text {
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 120px);
+  translate: -50% -50%;
+  opacity: 0;
+  animation: recruit-fv-text 3s forwards;
+}
+
+@keyframes recruit-fv-text {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+main .recruit-fv .recruit-fv-text p {
+  font-size: 3rem;
+  font-family: Noto Serif JP, sans-serif;
+  font-weight: 600;
+  line-height: 2;
+}
+
+main .recruit-fv .recruit-fv-text p span {
+  font-size: 3rem;
+  font-family: Noto Serif JP, sans-serif;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
 main .recruit-fv .recruit-fv-p {
   position: absolute;
-  top: 50%;
+  top: calc(65%);
   left: 50%;
   translate: -50% -50%;
   display: flex;
@@ -329,7 +362,7 @@ main .recruit-fv .recruit-fv-p div:nth-child(2)::before {
 main .recruit-fv .recruit-fv-p div:nth-child(1) {
   transform: translateY(-200px);
   opacity: 0;
-  animation: recruit-fv-p1 1.5s forwards;
+  animation: recruit-fv-p1 2s 1.5s forwards;
 }
 
 @keyframes recruit-fv-p1 {
@@ -347,7 +380,7 @@ main .recruit-fv .recruit-fv-p div:nth-child(1) {
 main .recruit-fv .recruit-fv-p div:nth-child(2) {
   transform: translateY(200px);
   opacity: 0;
-  animation: recruit-fv-p2 1.5s forwards;
+  animation: recruit-fv-p2 2s 1.5s forwards;
 }
 
 @keyframes recruit-fv-p2 {
@@ -372,7 +405,7 @@ main .recruit-fv .recruit-fv-p::before {
   height: 1px;
   background: #000000;
   opacity: 0;
-  animation: recruit-fv-p-border 1s .8s forwards;
+  animation: recruit-fv-p-border 1s 2.5s forwards;
 }
 
 @keyframes recruit-fv-p-border {
@@ -395,7 +428,7 @@ main .recruit-fv .recruit-fv-img1 {
   background: #000000;
   rotate: 45deg;
   opacity: 0;
-  animation: recruit-fv-img1 1s .8s forwards;
+  animation: recruit-fv-img1 1s 2.5s forwards;
 }
 
 @keyframes recruit-fv-img1 {
@@ -418,7 +451,7 @@ main .recruit-fv .recruit-fv-img2 {
   background: #000000;
   rotate: -45deg;
   opacity: 0;
-  animation: recruit-fv-img2 1s .8s forwards;
+  animation: recruit-fv-img2 1s 2.5s forwards;
 }
 
 @keyframes recruit-fv-img2 {
@@ -1447,6 +1480,18 @@ media
 }
 
 @media screen and (max-width:700px) {
+  main .recruit-fv .recruit-fv-text {
+    top: calc(20%);
+  }
+  
+  main .recruit-fv .recruit-fv-text p {
+    font-size: 2.25rem;
+  }
+  
+  main .recruit-fv .recruit-fv-text p span {
+    font-size: 2.25rem;
+  }
+
   main .recruit-fv .recruit-fv-p {
     flex-direction: column;
     translate: -50% -50%;
