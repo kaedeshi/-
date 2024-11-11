@@ -442,15 +442,19 @@ main .corporate .corporate-cimg img.show {
   50% {
     scale: 0.8;
   }
+
   60% {
     scale: 1.05;
   }
+
   70% {
     scale: 1;
   }
+
   80% {
     scale: 1.05;
   }
+
   90% {
     scale: 1;
   }
@@ -772,15 +776,19 @@ main .contact .contact-cimg img.show {
   50% {
     scale: 0.8;
   }
+
   60% {
     scale: 1.05;
   }
+
   70% {
     scale: 1;
   }
+
   80% {
     scale: 1.05;
   }
+
   90% {
     scale: 1;
   }
@@ -809,12 +817,12 @@ main .contact .contact-content .contact-list ul {
 }
 
 main .contact .contact-content .contact-list ul li::before {
- position: absolute;
- content: '・';
- color: #111111;
- left: -25px;
- top: 50%;
- transform: translateY(-50%);
+  position: absolute;
+  content: '・';
+  color: #111111;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 main .contact .contact-content .contact-list ul li {
@@ -944,18 +952,18 @@ footer
     transform: translateX(-50%);
     font-size: 3.25rem;
   }
-  
+
   main .fv .fv-p2 {
     top: 250px;
     left: calc(50% - 40px);
     transform: translateX(-50%);
     font-size: 1.5rem;
   }
-  
+
   main .fv .fv-img1 {
     display: none;
   }
-  
+
   main .fv .fv-img2 {
     top: 480px;
     left: calc(50% - 200px);
@@ -966,7 +974,7 @@ footer
     width: 84px;
     height: 84px;
   }
-  
+
   main .fv .fv-img3 {
     top: 480px;
     left: calc(50% + 130px);
@@ -977,7 +985,7 @@ footer
     width: 84px;
     height: 84px;
   }
-  
+
   main .fv .fv-img4 {
     top: calc(50% + 240px);
     left: calc(50% - 140px);
@@ -989,15 +997,15 @@ footer
     width: 84px;
     height: 84px;
   }
-  
+
   main .fv .fv-img4 img:nth-child(1) {
     transform: translate(-25px, -50px);
   }
-  
+
   main .fv .fv-img4 img:nth-child(3) {
     transform: translate(50px, -50px);
   }
-  
+
   main .fv .fv-img {
     position: absolute;
     top: 390px;
@@ -1140,48 +1148,48 @@ footer
   main .corporate-all .corporate4 {
     width: 100%;
   }
-  
+
   main .corporate-all .corporate4 .corporate-text {
     display: block;
     width: calc(100% - 80px);
     margin-inline: auto;
   }
-  
+
   main .corporate-all .corporate4 .corporate-text>div {
     width: 100%;
     text-align: center;
     margin-inline: auto;
   }
-  
+
   main .corporate-all .corporate4 .corporate-text .corporate-p {
     width: 100%;
     font-size: 1.125rem;
     margin-top: 25px;
   }
-  
+
   main .corporate-all .corporate4 .corporate-text .corporate-p .corporate-btn {
     margin-top: 25px;
     margin-inline: auto;
   }
-  
+
   main .contact .contact-content {
     width: 100%;
     margin-top: 50px;
   }
-  
+
   main .contact .contact-content .contact-list ul {
     width: max(100% - 80px, 52%);
     margin-inline: auto;
   }
-  
+
   main .contact .contact-content .contact-list ul li {
     font-size: 1.25rem;
   }
-  
+
   main .contact .contact-content .contact-btn {
     margin-top: 25px;
   }
-  
+
   main .contact .contact-content .contact-p {
     margin-top: 25px;
     font-size: 1.125rem;
@@ -1210,11 +1218,11 @@ footer
   }
 
   footer .footer-sp-menu li:nth-child(4),
-  footer .footer-sp-menu li:nth-child(5), 
+  footer .footer-sp-menu li:nth-child(5),
   footer .footer-sp-menu li:nth-child(6) {
     padding-left: 20px;
   }
-  
+
   footer .footer-sp-menu li:nth-child(10) {
     text-align: center;
     margin-top: 25px;
@@ -1229,8 +1237,27 @@ footer
     opacity: 1;
     scale: 1;
   }
-  
+
   footer .footer-sp-menu li:active {
     opacity: .4;
+  }
+}
+
+@media screen and (max-width:600px) {
+  main .corporate .corporate-content .corporate-ecore .corporate-ecore-btns .corporate-ecore-btn div {
+    width: calc(100% - 80px);
+    margin-inline: auto;
+  }
+
+  main .corporate .corporate-content .corporate1 .corporate-btn,
+  main .corporate .corporate-content .corporate2 .corporate-btn,
+  main .corporate .corporate-content .corporate3 .corporate-btn {
+    width: calc(100% - 80px);
+    margin-inline: auto;
+  }
+
+  main .corporate-all .corporate4 .corporate-text .corporate-p .corporate-btn {
+    width: calc(100% - 80px);
+    margin-inline: auto;
   }
 }

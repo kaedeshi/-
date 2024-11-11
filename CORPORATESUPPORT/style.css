@@ -1032,7 +1032,7 @@ media
   }
 }
 
-@media screen and (max-width:550px) {
+@media screen and (max-width:660px) {
   main .corporatesupport-ecore .corporatesupport-ecore-img-pc {
     display: none;
   }
@@ -1058,7 +1058,7 @@ media
   
   main .corporatesupport-ecore .corporatesupport-ecore-btn1 div,
   main .corporatesupport-ecore .corporatesupport-ecore-btn2 div {
-    padding: 4px 0;
+    padding: 0;
     width: 300px;
     font-size: 1.25rem;
   }
