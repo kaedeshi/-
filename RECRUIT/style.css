@@ -298,9 +298,7 @@ main .recruit-fv {
   width: 100%;
   height: calc(100vh - 80px);
   background: #eeeeee;
-  /* background-size: cover;
-  background-position: center;
-  overflow: hidden; */
+  overflow: hidden;
  }
 
 main .recruit-fv .recruit-fv-text {
