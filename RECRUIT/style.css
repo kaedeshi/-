@@ -715,7 +715,9 @@ main .recruit-ecore .recruit-ecore-content .recruit-ecore-btn {
   margin-inline: auto;
   font-size: 1.25rem;
   font-family: Noto Serif JP, sans-serif;
-  border: 1px solid #000000;
+  /* border: 1px solid #000000; */
+  background: #E26D32;
+  color: #ffffff;
   border-radius: 16px;
   text-align: center;
 }

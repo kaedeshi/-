@@ -206,19 +206,78 @@ main .fv {
 
 main .fv .fv-p1 {
   position: absolute;
-  top: calc(50% - 275px);
-  left: calc(50% - 550px);
-  font-size: 5.625rem;
+  /* top: calc(50% - 275px); */
+  top: calc(50%);
+  transform: translateY(-50%);
+  /* left: calc(50% - 550px); */
+  left: calc(50% - 620px);
+  /* font-size: 5.625rem; */
+  font-size: 7.5rem;
+  /* font-size: 2.625rem; */
   font-family: Noto Serif JP, sans-serif;
   font-weight: 700;
   line-height: 1.1;
   white-space: nowrap;
+
+  writing-mode: vertical-rl;
+  text-orientation: upright;
 }
 
-main .fv .fv-p2 {
+/* main .fv .fv-p1 {
+  position: absolute;
+  top: calc(50% + 30px);
+  left: calc(50% - 650px);
+  transform: translateY(-50%);
+  font-size: 5.625rem;
+  font-size: 2.625rem;
+  font-family: "Sawarabi Mincho", serif;
+  font-weight: 700;
+  line-height: 1.1;
+  line-height: 3;
+  white-space: nowrap;
+} */
+
+/* main .fv .fv-p2 {
   position: absolute;
   top: calc(50% + 75px);
   left: calc(50% - 550px);
+  font-size: 2.25rem;
+  font-family: "Sawarabi Mincho", serif;
+  line-height: 1.75;
+  white-space: nowrap;
+} */
+
+main .fv .fv-p12 {
+  position: absolute;
+  top: calc(50% - 240px);
+  left: calc(50% - 480px);
+  font-size: 2.25rem;
+  font-family: "Sawarabi Mincho", serif;
+  line-height: 1.75;
+  white-space: nowrap;
+}
+main .fv .fv-p13 {
+  position: absolute;
+  top: calc(50% - 120px);
+  left: calc(50% - 480px);
+  font-size: 2.25rem;
+  font-family: "Sawarabi Mincho", serif;
+  line-height: 1.75;
+  white-space: nowrap;
+}
+main .fv .fv-p14 {
+  position: absolute;
+  top: calc(50%);
+  left: calc(50% - 480px);
+  font-size: 2.25rem;
+  font-family: "Sawarabi Mincho", serif;
+  line-height: 1.75;
+  white-space: nowrap;
+}
+main .fv .fv-p2 {
+  position: absolute;
+  top: calc(50% + 120px);
+  left: calc(50% - 480px);
   font-size: 2.25rem;
   font-family: "Sawarabi Mincho", serif;
   line-height: 1.75;
@@ -398,9 +457,11 @@ main .about .about-content .about-btn {
   width: 320px;
   font-size: 1.125rem;
   font-family: Sawarabi Mincho, sans-serif;
-  border: 1px solid #111111;
+  /* border: 1px solid #111111; */
   border-radius: 8px;
   text-align: center;
+  color: #ffffff;
+  background: #E26D32;
   margin-left: calc(((100% - 20px)/ 2) + 20px);
 }
 
@@ -546,7 +607,9 @@ main .corporate .corporate-content .corporate-ecore .corporate-ecore-btns .corpo
   width: 320px;
   font-size: 1.125rem;
   font-family: Sawarabi Mincho, sans-serif;
-  border: 1px solid #111111;
+  /* border: 1px solid #111111; */
+  background: #E26D32;
+  color: #ffffff;
   border-radius: 8px;
 }
 
@@ -648,7 +711,9 @@ main .corporate .corporate-content .corporate3 .corporate-btn {
   width: 320px;
   font-size: 1.125rem;
   font-family: Sawarabi Mincho, sans-serif;
-  border: 1px solid #111111;
+  /* border: 1px solid #111111; */
+  background: #E26D32;
+  color: #ffffff;
   border-radius: 8px;
   text-align: center;
 }
@@ -731,7 +796,9 @@ main .corporate-all .corporate4 .corporate-text .corporate-p .corporate-btn {
   width: 320px;
   font-size: 1.125rem;
   font-family: Sawarabi Mincho, sans-serif;
-  border: 1px solid #111111;
+  /* border: 1px solid #111111; */
+  background: #E26D32;
+  color: #ffffff;
   border-radius: 8px;
   text-align: center;
 }
@@ -838,7 +905,9 @@ main .contact .contact-content .contact-btn {
   width: 320px;
   font-size: 1.125rem;
   font-family: Sawarabi Mincho, sans-serif;
-  border: 1px solid #111111;
+  /* border: 1px solid #111111; */
+  background: #E26D32;
+  color: #ffffff;
   border-radius: 8px;
   text-align: center;
 }
@@ -948,14 +1017,32 @@ footer
 @media screen and (max-width:1200px) {
   main .fv .fv-p1 {
     top: 100px;
-    left: 50%;
+    left: calc(50% - 155px);
     transform: translateX(-50%);
     font-size: 3.25rem;
   }
 
+  main .fv .fv-p12 {
+    top: 120px;
+    left: calc(50% - 18px);
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+  }
+  main .fv .fv-p13 {
+    top: 170px;
+    left: calc(50% + 5px);
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+  }
+  main .fv .fv-p14 {
+    top: 220px;
+    left: calc(50% + 5px);
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+  }
   main .fv .fv-p2 {
-    top: 250px;
-    left: calc(50% - 40px);
+    top: 270px;
+    left: calc(50% - 30px);
     transform: translateX(-50%);
     font-size: 1.5rem;
   }
@@ -1008,7 +1095,7 @@ footer
 
   main .fv .fv-img {
     position: absolute;
-    top: 390px;
+    top: 380px;
     left: 50%;
     transform: translateX(-50%);
     width: 172.5px;

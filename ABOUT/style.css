@@ -615,7 +615,9 @@ main .contact .contact-content .contact-btn {
   width: 320px;
   font-size: 1.125rem;
   font-family: Sawarabi Mincho, sans-serif;
-  border: 1px solid #111111;
+  /* border: 1px solid #111111; */
+  background: #E26D32;
+  color: #ffffff;
   border-radius: 8px;
   text-align: center;
 }
