@@ -408,29 +408,6 @@ main .recruit-fv .recruit-fv-p div:nth-child(2) {
   }
 }
 
-/* main .recruit-fv .recruit-fv-p::before {
-  position: absolute;
-  content: '';
-  bottom: -20px;
-  left: calc(50%);
-  transform: translateX(-50%);
-  width: 450px;
-  height: 1px;
-  background: #000000;
-  opacity: 0;
-  animation: recruit-fv-p-border 1s 2.5s forwards;
-}
-
-@keyframes recruit-fv-p-border {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-} */
-
 main .recruit-fv .recruit-fv-img1 {
   position: absolute;
   top: 50%;
@@ -1427,6 +1404,18 @@ media
     margin-inline: auto;
   }
 
+  main .recruit-support .recruit-support-content .recruit-support-support1 .recruit-support-support1-text .recruit-support-support1-p h3 {
+    font-size: 1rem;
+  }
+  
+  main .recruit-support .recruit-support-content .recruit-support-support1 .recruit-support-support1-text .recruit-support-support1-p h3 span {
+    font-size: 1.25rem;
+  }
+  
+  main .recruit-support .recruit-support-content .recruit-support-support1 .recruit-support-support1-text .recruit-support-support1-p p {
+    font-size: 1rem;
+  }
+
   main .recruit-support .recruit-support-content .recruit-support-support1 {
     position: relative;
     width: 100%;
@@ -1438,6 +1427,18 @@ media
     height: 400px;
     margin-left: auto;
     position: relative;
+  }
+
+  main .recruit-support .recruit-support-content .recruit-support-support2 .recruit-support-support2-text .recruit-support-support2-p h3 {
+    font-size: 1rem;
+  }
+
+  main .recruit-support .recruit-support-content .recruit-support-support2 .recruit-support-support2-text .recruit-support-support2-p h3 span {
+    font-size: 1.25rem;
+  }
+
+  main .recruit-support .recruit-support-content .recruit-support-support2 .recruit-support-support2-text .recruit-support-support2-p p {
+    font-size: 1rem;
   }
 }
 
