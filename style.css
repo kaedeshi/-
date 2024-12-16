@@ -1017,32 +1017,32 @@ footer
 @media screen and (max-width:1200px) {
   main .fv .fv-p1 {
     top: 100px;
-    left: calc(50% - 140px);
+    left: calc(50% - 130px);
     transform: translateX(-50%);
     font-size: 3.25rem;
   }
 
   main .fv .fv-p12 {
     top: 120px;
-    left: calc(50% - 3px);
+    left: calc(50% + 7px);
     transform: translateX(-50%);
     font-size: 1.5rem;
   }
   main .fv .fv-p13 {
     top: 170px;
-    left: calc(50% + 20px);
+    left: calc(50% + 30px);
     transform: translateX(-50%);
     font-size: 1.5rem;
   }
   main .fv .fv-p14 {
     top: 220px;
-    left: calc(50% + 20px);
+    left: calc(50% + 30px);
     transform: translateX(-50%);
     font-size: 1.5rem;
   }
   main .fv .fv-p2 {
     top: 270px;
-    left: calc(50% - 15px);
+    left: calc(50% - 5px);
     transform: translateX(-50%);
     font-size: 1.5rem;
   }
