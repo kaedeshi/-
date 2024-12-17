@@ -228,6 +228,10 @@ main .about .about-content .about-h3 h3 {
   font-family: Noto Serif JP, sans-serif;
 }
 
+main .about .about-content .about-h3 h3 span {
+  white-space: nowrap;
+}
+
 main .about .about-content .about-text {
   display: flex;
   align-items: center;
